@@ -44,6 +44,13 @@ Anyways, I digress.
 ### How do you choose a TV when you go to the store?
 Costco, BestBuy, and Target are typically where I see the most TVs on display. They are getting cheaper and bigger nowadays compared to when I was younger. I remember having this big clunky TV back in the early 2000's where my brother and I would watch shows. Some of my favorites were Danny Phantom, The Suite Life of Zack and Cody, The Suite Life on Deck, Drake and Josh, iCarly, Totally Spies, among many, many others.
 
-Back then, I'm pretty sure the TVs were called "tube TVs" with plasma TVs and flat screen TVs. Nowadays, screens use a whole bunch of different techonolgies to increase the quality of 
+Back then, I'm pretty sure the TVs were called "tube TVs" with plasma TVs and flat screen TVs. Nowadays, screens use a whole bunch of different techonolgies to increase the quality of color perception that the screen emits to the viewers. The organizations responsible for pushing the technology behind TVs forwards seem to repeat a few common behaviors: make TVs cheaper, try to sell more TVs, increase the quality of color, increase the density of pixels within the screen.
+
+The use a few cheap tricks to do so. To make TVs cheaper, they put a price tag with a smaller number on the TV. To sell more TVs, they use marketing tricks such as measuring the diagonal of the TV (so a that is 3 inches wide and 4 inches tall would be labeled as a 5 inch TV (using Pythagoras's Theorem). To increase the quality of color, they develop new techniques such as [today's selction at Walmart ](https://www.walmart.com/cp/tv-video/1060825) having a choice of QLED, OLED, LED, LCD, and NanoCell TVs. They all perform the same function, being able to display a picture or motion picture like your favorite TV show or your favorite movie (mine are The Big Bang Theory and Silicon Valley despite not having watch either in their entirety. They remain my favorite because those shows consistently make me laugh despite the corny jokes).
+
+
+
+
+
 
 
