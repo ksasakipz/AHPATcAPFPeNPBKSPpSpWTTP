@@ -29,4 +29,21 @@ From a working class perspective, high quality code might be described as "It te
 
 To conclude the introduction, your identity in relation to software affects your judgement on whether or not code is to be considered "high quality" or "low quality."
 
+## A Little Background
+### How do you view code?
+We as coders, programmers, hackers, and anyone who works with computers (including white-collared workers, students, and blue-collared workers not in the field) view code in the same way: using a screen.
+Have you ever thought about what a screen is?
+
+I own many screens. I have a Macbook Pro gifted to me by my so, so, so generous parents who have bestowed upon me the gift of privilege and the gift of uncondtional love back in December of 2014. 
+I have a Macbook Pro that I bought for myself this past year, back in May of 2021 that I am paying off using an Apple Credit card since they offered a 0% interest rate for a $2,000+ machine (the thought process is that if I'm going to dish out $2,000+ eventually, but I don't need to do so right away, I mind as well keep the money in my pockets rather than Apple's pockets just in case I need it for a rainy day.
+
+The approach I took when buying this new machine is the same approach that my parents used to buy my first car back in 2000. Given that I was 2 at the time, so it wasn't "mine" until I learned how to drive, and even then, it legally wasn't "mine" since my name was never on the registration. Anyways though, back when they bought a 2000 Ford Expedition, the interest rates for keeping your money in the bank were higher than the interest rates required to receive an auto-loan. For this reason, despite typically desiring the avoidance of "going into debt," my parents knew that going into debt to buy the car would benefit them in the long run. That is, it would be "cheaper" to get an auto-loan than to buy a car outright.
+
+Anyways, I digress.
+
+### How do you choose a TV when you go to the store?
+Costco, BestBuy, and Target are typically where I see the most TVs on display. They are getting cheaper and bigger nowadays compared to when I was younger. I remember having this big clunky TV back in the early 2000's where my brother and I would watch shows. Some of my favorites were Danny Phantom, The Suite Life of Zack and Cody, The Suite Life on Deck, Drake and Josh, iCarly, Totally Spies, among many, many others.
+
+Back then, I'm pretty sure the TVs were called "tube TVs" with plasma TVs and flat screen TVs. Nowadays, screens use a whole bunch of different techonolgies to increase the quality of 
+
 
