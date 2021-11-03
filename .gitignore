@@ -4,6 +4,7 @@ The-Game
 toolbox
 
 # Housekeeping
+out*
 *.swp
 .DS_Store
 .env
