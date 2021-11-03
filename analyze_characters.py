@@ -1,4 +1,8 @@
 # Magic Numbers
+DOMAIN = (1,0)
+RANGE = (0,1)
+MINIMUM = -1
+MAXIMUM = 11
 DESTINATION = 10
 
 # Variables Used
