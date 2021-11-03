@@ -9,3 +9,5 @@ Kevin Sasaki seeks to reproduce and redistribute privilege, to a reasonable exte
 ## Enterprise Mission Statement
 Pure Storage seeks to make powerful information technology infrastructure that worksl ike the best consumer technologies.
 
+## Human Mission Statement
+Survive at all costs.
