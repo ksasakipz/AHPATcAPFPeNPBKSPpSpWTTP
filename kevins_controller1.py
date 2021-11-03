@@ -90,7 +90,7 @@ def build_ship():
         command += xxx_args[index]+" "
         index += 1
 
-    command = "python3 analyze_out.ls-lfa.py"
+    command = "python3 analyze_characters.py"
 
     print()
     print("-----------------")

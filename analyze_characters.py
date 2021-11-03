@@ -1,6 +1,6 @@
 def main():
     print("Hello there")
-    file1 = open('DONTREADEME.md', 'r')
+    file1 = open('DONTREADME.md', 'r')
     line_count = 0
     char_count = 0
      
