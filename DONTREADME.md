@@ -6,8 +6,8 @@ Harvey Mudd College seeks to educate engineers, scientists and mathematicians we
 ## Personal Mission Statement
 Kevin Sasaki seeks to reproduce and redistribute privilege, to a reasonable extent of course
 
-## Enterprise Mission Statement
-Pure Storage seeks to make powerful information technology infrastructure that worksl ike the best consumer technologies.
+## Former-Enterprise Mission Statement
+XXX seeks to make powerful information technology infrastructure that works like the best consumer technologies.
 
 ## Human Mission Statement
 Survive at all costs.
