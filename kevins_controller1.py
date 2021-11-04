@@ -8,12 +8,12 @@ Usage: In the CLI, use "python3 kevins_controller1.py x y z" where x, y, and z g
 
 """
 
-def main():
+def main(command):
     print("B1 main A1")
     print("B2 treasure_map A2")
     treasure_map = {'x':0} # 1
     print("B3 build_ship A3")
-    build_ship() #2
+    build_ship(command) #2
 
     # Begin loop here
     print("B4 compress A4")
@@ -77,25 +77,7 @@ def sanitize():
 
     return retval
 
-def build_ship():
-    #print(sys.argv)
-    #print(type(sys.argv))
-    #print(sys.argv[1:])
-    xxx_args = sys.argv[1:]
-
-    #print("Trying to execute command")
-    command = ""
-    index = 0
-    while index < len(xxx_args):
-        command += xxx_args[index]+" "
-        index += 1
-
-    command = "python3 analyze_characters.py"
-
-    print()
-    print("-----------------")
-
-    print("command: " + command +" \n")
+def build_ship(command):
 
     sprocess = subprocess.call([command], shell=True)
 
@@ -151,4 +133,27 @@ def set_sail():
         break
 
 if __name__ == "__main__":
-    main()
+    xxx_args = sys.argv[1:]
+    command_box = {1: "python3 analyze_characters.py",
+    2: "bash toolbox/scripts/git_add_commit_push.sh "}
+    index = 0
+
+
+    try: 
+        command = command_box[int(xxx_args[index])]
+        index += 1
+    except:
+        raise Exception("ack")
+        pass
+
+    while index < len(xxx_args):
+        command += xxx_args[index]+" "
+        index += 1
+
+    print()
+    print("-----------------")
+
+    print("command: " + command +" \n")
+
+    
+    main(command)
