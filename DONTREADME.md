@@ -11,3 +11,6 @@ Pure Storage seeks to make powerful information technology infrastructure that w
 
 ## Human Mission Statement
 Survive at all costs.
+
+## Cheat Code
+U-U-D-D-L-R-L-R-B-A-START
