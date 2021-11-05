@@ -2,11 +2,46 @@ import sys
 import subprocess
 import time
 
+block_box = {4: "echo 4"}
+
 """
 
 Usage: In the CLI, use "python3 kevins_controller1.py x y z" where x, y, and z get chained together to perform a command on the CLI
 
 """
+
+def proof_read_command(incantation):
+    retval = "chicken butt"
+    return retval, True
+
+def magic(incantation):
+    retval = False
+    valid = False
+    global block_box
+    print("block_box: ", block_box)
+    print("incantation: ", incantation)
+    print("type(incantation): ", type(incantation))
+    print("len(incantation): ", len(incantation))
+    try:
+        print("block_box: ", block_box)
+        print("incantation: " , incantation)
+        print("type(incantation): ", type(incantation))
+        print("A1 retval: {} |  valid: {}".format(retval, valid))
+        retval = block_box[int(incantation)]
+        valid = True
+        print("block_box: ", block_box)
+        print("incantation: " , incantation)
+        print("type(incantation): ", type(incantation))
+        print("A2 retval: {} |  valid: {}".format(retval, valid))
+        return retval, valid
+    except:
+        retval = True
+        print("B retval: {} |  valid: {}".format(retval, valid))
+        return retval, valid
+    
+    retval, valid = proof_read_command(incantation)
+    print("C retval: {} |  valid: {}".format(retval, valid))
+    return retval, valid
 
 def main(command):
     print("B1 main A1")
@@ -137,15 +172,26 @@ if __name__ == "__main__":
     command_box = {1: "python3 analyze_characters.py",
     2: "bash toolbox/scripts/git_add_commit_push.sh ",
     3: "dirs -v"}
+    sanitized = False
     index = 0
 
+    while sanitized == False:
+        try: 
+            command = command_box[int(xxx_args[index])]
+            index += 1
+            sanitized = True
+        except:
+            fail_safe, valid = magic(xxx_args[index])
+            print("fail_safe: " , fail_safe)
+            print("type(fail_safe): ", type(fail_safe))
+            if valid == False:
+                raise Exception("Invalid command. What is it that you would like to do?")
+            else:
+                command = str(fail_safe)
+                print("command is: " + command)
+                sanitized = True
 
-    try: 
-        command = command_box[int(xxx_args[index])]
-        index += 1
-    except:
-        raise Exception("ack")
-        pass
+    print("AHHHHHHHHHHHHHHHHH: ", command)
 
     while index < len(xxx_args):
         command += xxx_args[index]+" "
