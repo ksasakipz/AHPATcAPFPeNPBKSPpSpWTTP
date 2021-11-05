@@ -176,7 +176,7 @@ def sanitize():
     return retval
 
 def build_ship(command):
-    #command = "clear; " + command
+    command = "clear; " + command
 
     sprocess = subprocess.call([command], shell=True)
 
