@@ -3,6 +3,65 @@ import subprocess
 import time
 
 block_box = {4: "echo 4"}
+full_names = {1: "Michael Mabe",
+    2: "Leonhard Euler"}
+first_names = {1: "Kevin",
+    2: "Euler"}
+identities = {1: "Mabe",
+    2: "e^(ipi)+1=0"}
+numbers = {0: "zero",
+    1: "one",
+    2: "two",
+    3: "three",
+    4: "four",
+    5: "five",
+    6: "six",
+    7: "seven",
+    8: "eight",
+    9: "nine",
+    10: "ten",
+    11: "eleven",
+    12: "twelve",
+    13: "thirteeen",
+    14: "fourteen",
+    15: "fifteen",
+    16: "sixteen",
+    17: "seventeen",
+    18: "eighteen",
+    19: "nineteen",
+    20: "twenty",
+    30: "thirty",
+    40: "forty",
+    50: "fifty",
+    60: "sixty",
+    70: "seventy",
+    80: "eighty",
+    90: "ninety",
+    100: "hundred",
+    1000: "thousand",
+    1000000: "million",
+    1000000000: "billion",
+    1000000000000: "trillion",
+    1000000000000000: "quadrillian",
+    1000000000000000000: "quintillion", 
+    1000000000000000000000: "hextillion",
+    10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000: "googol"}
+phone_numbers = {"Mabe": 0,
+    "e^(ipi)+1=0": 1,
+    "pi": 2}
+order = {"main": 0,
+    "first": 1,
+    "second": 2,
+    "third": 3,
+    "fourth": 4,
+    "fifth": 5,
+    "sixth": 6,
+    "sevnth": 7,
+    "eighth": 8,
+    "ninth": 9,
+    "tenth": 10,
+    "eleventh": 11,
+    "twentieth": 20}
 
 """
 
