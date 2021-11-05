@@ -54,7 +54,7 @@ phone_numbers = {"Mabe": 0,
     "e^(ipi)+1=0": 1,
     "pi": 2}
 order = {"main": 0,
-    "first": 1,
+    "first": 2,
     "second": 2,
     "third": 3,
     "fourth": 4,
@@ -176,6 +176,7 @@ def sanitize():
     return retval
 
 def build_ship(command):
+    #command = "clear; " + command
 
     sprocess = subprocess.call([command], shell=True)
 
