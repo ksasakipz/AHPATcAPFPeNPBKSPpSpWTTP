@@ -2,7 +2,18 @@ import sys
 import subprocess
 import time
 
-block_box = {4: "echo 4"}
+lock = " "
+x = 1
+
+command_box = {0: "ls -lfa",
+    1: "python3 analyze_characters.py",
+    2: "bash toolbox/scripts/git_add_commit_push.sh ",
+    3: "dirs -v"}
+
+block_box = {0: " ",
+1: "",
+4: "echo 4",
+"": "True"}
 full_names = {1: "Michael Mabe",
     2: "Leonhard Euler",
     3: "Albert Einstein"}
@@ -77,14 +88,12 @@ def proof_read_command(incantation):
     retval = "chicken butt"
     return retval, True
 
-def magic(incantation):
-    retval = False
+def magic(incantation=" "):
+    retval = "False"
     valid = False
     global block_box
     print("block_box: ", block_box)
-    print("incantation: ", incantation)
-    print("type(incantation): ", type(incantation))
-    print("len(incantation): ", len(incantation))
+    print("incantation: {} | type(incantation): {} | len(incantation: {}".format( incantation, type(incantation), len(incantation)))
     try:
         print("block_box: ", block_box)
         print("incantation: " , incantation)
@@ -98,7 +107,7 @@ def magic(incantation):
         print("A2 retval: {} |  valid: {}".format(retval, valid))
         return retval, valid
     except:
-        retval = True
+        retval = "True"
         print("B retval: {} |  valid: {}".format(retval, valid))
         return retval, valid
     
@@ -146,8 +155,6 @@ def validate():
     else:
         print("validation failed")
     return retval
-        
-
     
 def add_to_treasure(treasure_map, gold):
     treasure_map[gold] += 1
@@ -163,7 +170,6 @@ def compress():
 def decompress():
     return "decompress"
 
-    
 def sanitize():
     retval = False
     if True:
@@ -177,6 +183,33 @@ def sanitize():
 
 def build_ship(command):
     command = "clear; " + command
+
+    """ Pretty sure this will become one of the most important snippets
+    """
+    global lock
+    lock, trash = magic()
+    key = input("Press {} to continue.".format(x))
+    print()
+    print()
+    print()
+
+    print("key: {} | lock: {}".format(key, lock)) 
+    lock, garbage = magic(key)
+    print()
+    print()
+    print()
+    print("key: {} | lock: {}".format(key, lock)) 
+    lock, waste  = magic(lock)
+    print()
+    print()
+    print()
+    print("key: {} | lock: {}".format(key, lock)) 
+    if key == lock:
+        pass
+    else:
+        raise Exception("Invalid attempt at executing a command")
+    """ End theorized most important snippet
+    """
 
     sprocess = subprocess.call([command], shell=True)
 
@@ -192,12 +225,9 @@ def build_ship(command):
     print("Done\n")
     """
 
-
     print("-----------------")
     print()
-    
-    success = False
-    print("build_ship success", success)
+    print("command |{}| executed successfully".format(command))
     return 1
 
 def alphabetic():
@@ -233,9 +263,6 @@ def set_sail():
 
 if __name__ == "__main__":
     xxx_args = sys.argv[1:]
-    command_box = {1: "python3 analyze_characters.py",
-    2: "bash toolbox/scripts/git_add_commit_push.sh ",
-    3: "dirs -v"}
     sanitized = False
     index = 0
 
@@ -266,5 +293,4 @@ if __name__ == "__main__":
 
     print("command: " + command +" \n")
 
-    
     main(command)
