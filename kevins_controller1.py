@@ -4,9 +4,11 @@ import time
 
 block_box = {4: "echo 4"}
 full_names = {1: "Michael Mabe",
-    2: "Leonhard Euler"}
-first_names = {1: "Kevin",
-    2: "Euler"}
+    2: "Leonhard Euler",
+    3: "Albert Einstein"}
+nick_names = {1: "Kevin",
+    2: "Euler",
+    3: "Einstein"}
 identities = {1: "Mabe",
     2: "e^(ipi)+1=0"}
 numbers = {0: "zero",
@@ -45,7 +47,9 @@ numbers = {0: "zero",
     1000000000000000: "quadrillian",
     1000000000000000000: "quintillion", 
     1000000000000000000000: "hextillion",
-    10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000: "googol"}
+    10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000: "googol",
+    00: "google",
+    000: "triple"}
 phone_numbers = {"Mabe": 0,
     "e^(ipi)+1=0": 1,
     "pi": 2}
