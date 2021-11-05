@@ -135,7 +135,8 @@ def set_sail():
 if __name__ == "__main__":
     xxx_args = sys.argv[1:]
     command_box = {1: "python3 analyze_characters.py",
-    2: "bash toolbox/scripts/git_add_commit_push.sh "}
+    2: "bash toolbox/scripts/git_add_commit_push.sh ",
+    3: "dirs -v"}
     index = 0
 
 
