@@ -1,6 +1,7 @@
 import sys
 import subprocess
 import time
+import pprint
 
 lock = " "
 x = 1
@@ -262,7 +263,11 @@ def set_sail():
         break
 
 if __name__ == "__main__":
-    xxx_args = sys.argv[1:]
+    if len(sys.argv) == 1:
+        pprint.PrettyPrinter().pprint( command_box )
+        xxx_args = input("Which command would you like to use?")
+    else:
+        xxx_args = sys.argv[1:]
     sanitized = False
     index = 0
 
