@@ -208,7 +208,9 @@ def build_ship(command):
     if key == lock:
         pass
     else:
-        raise Exception("Invalid attempt at executing a command")
+        pass
+        #raise Exception("Invalid attempt at executing a command")
+
     """ End theorized most important snippet
     """
 
