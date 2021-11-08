@@ -267,7 +267,15 @@ def set_sail():
 if __name__ == "__main__":
     if len(sys.argv) == 1:
         pprint.PrettyPrinter().pprint( command_box )
-        xxx_args = input("Which command would you like to use?")
+        xxx_args = input("Which command would you like to use?\n")
+
+        print("len(xxx_args): {} | xxx_args {}".format(len(xxx_args), xxx_args))
+        if len(xxx_args) > 1:
+            xxx_args = xxx_args.split()
+            if len(xxx_args[0]) > 1:
+                xxx_args[1] = xxx_args[0][1:] + xxx_args[1]
+                xxx_args[0] = xxx_args[0][:1]
+        print("len(xxx_args): {} | xxx_args {}".format(len(xxx_args), xxx_args))
     else:
         xxx_args = sys.argv[1:]
     sanitized = False
