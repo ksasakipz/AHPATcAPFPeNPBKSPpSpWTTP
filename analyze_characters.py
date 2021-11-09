@@ -68,7 +68,17 @@ def increment_destination():
     if DESTINATION > 10:
         DESTINATION = 0
 
-def analyze(in_file_name, in_permissions, out_permission):
+def analyze(in_file_name, in_permissions='r', out_permission='a'):
+    retval = False
+
+    in_file_parse= in_file_name.split('.')
+    extension = in_file_parse[len(in_file_parse) - 1]
+    if extension == 'py':
+        retval = analyze_py(in_file_name, in_permissions, out_permission)
+    return retval
+
+def analyze_py(in_file_name, in_permissions='r', out_permission='a'):
+    retval = False
     kprint("Hello there " + in_file_name + " " + in_permissions, DESTINATION)
     print()
     in_file = open(in_file_name, in_permissions)
@@ -92,12 +102,15 @@ def analyze(in_file_name, in_permissions, out_permission):
         out_file.write("Line {} char {}: {}".format(line_count, char_count, line))
     in_file.close()
     out_file.close()
+    retval = True
+    return retval
 
 def main():
-    analyze('DONTREADME.md', 'rb', 'a')
-    analyze('DONTREADME.md', 'r', 'a')
-    analyze('out.DONTREADME.md', 'rb', 'a')
-    analyze('out.DONTREADME.md', 'r', 'a')
+    # analyze('DONTREADME.md', 'rb', 'a')
+    # analyze('DONTREADME.md', 'r', 'a')
+    # analyze('out.DONTREADME.md', 'rb', 'a')
+    # analyze('out.DONTREADME.md', 'r', 'a')
+    analyze('kevins_controller1.py', 'r')
 
 if __name__ == "__main__":
     DESTINATION = 0
