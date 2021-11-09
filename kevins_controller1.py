@@ -85,6 +85,11 @@ Usage: In the CLI, use "python3 kevins_controller1.py x y z" where x, y, and z g
 
 """
 
+def peek_string(args):
+    retval = "\"\"".format()
+
+    return retval
+
 def proof_read_command(incantation):
     retval = "chicken butt"
     return retval, True
