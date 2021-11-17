@@ -6,10 +6,12 @@ import pprint
 lock = " "
 x = 1
 
-command_box = {0: "ls -lfa",
+command_box = {'q':'q',
+    0: "ls -lfa",
     1: "python3 analyze_characters.py",
     2: "bash toolbox/scripts/git_add_commit_push.sh ",
-    3: "dirs -v"}
+    3: "dirs -v",
+    4: "du -sh ./*"}
 
 block_box = {0: " ",
 1: "",
@@ -280,6 +282,11 @@ if __name__ == "__main__":
             if len(xxx_args[0]) > 1:
                 xxx_args[1] = xxx_args[0][1:] + xxx_args[1]
                 xxx_args[0] = xxx_args[0][:1]
+        else:
+            if xxx_args[0] == 'q':
+                raise NotImplementedError("Thank you for browsing the command options. Good bye!")
+            else:
+                print("nothing")
         print("len(xxx_args): {} | xxx_args {}".format(len(xxx_args), xxx_args))
     else:
         xxx_args = sys.argv[1:]
