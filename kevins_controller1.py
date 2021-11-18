@@ -212,11 +212,10 @@ def build_ship(command):
     print()
     print()
     print("key: {} | lock: {}".format(key, lock)) 
-    if key == lock:
+    if key == "1":
         pass
     else:
-        pass
-        #raise Exception("Invalid attempt at executing a command")
+        raise Exception("Exited without execution")
 
     """ End theorized most important snippet
     """
