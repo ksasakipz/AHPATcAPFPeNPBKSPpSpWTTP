@@ -1,3 +1,6 @@
+# Kevin's Configs Begin
+# Double-spaced: Off
+# Status: In Progress
 import sys
 import subprocess
 import time
@@ -21,7 +24,8 @@ block_box = {0: " ",
 
 """
 
-Usage: In the CLI, use "python3 kevins_controller1.py x y z" where x, y, and z get chained together to perform a command on the CLI
+Usage: In the CLI, use "python3 kevins_controller1.py x y z" where x, y, and z
+get chained together to perform a command on the CLI
 
 """
 
@@ -46,7 +50,8 @@ def magic(incantation=" "):
     valid = False
     global block_box
     print("block_box: ", block_box)
-    print("incantation: {} | type(incantation): {} | len(incantation: {}".format( incantation, type(incantation), len(incantation)))
+    print("incantation: {} | type(incantation): {} | len(incantation: {}".
+        format( incantation, type(incantation), len(incantation)))
     try:
         print("block_box: ", block_box)
         print("incantation: " , incantation)
@@ -242,7 +247,8 @@ if __name__ == "__main__":
         pprint.PrettyPrinter().pprint( command_box )
         xxx_args = input("Which command would you like to use?\n")
 
-        print("len(xxx_args): {} | xxx_args {}".format(len(xxx_args), xxx_args))
+        print("len(xxx_args): {} | xxx_args {}".format(len(xxx_args),
+            xxx_args))
         if len(xxx_args) > 1:
             xxx_args = xxx_args.split()
             if len(xxx_args[0]) > 1:
@@ -250,10 +256,12 @@ if __name__ == "__main__":
                 xxx_args[0] = xxx_args[0][:1]
         else:
             if xxx_args[0] == 'q':
-                raise NotImplementedError("Thank you for browsing the command options. Good bye!")
+                raise NotImplementedError("Thank you for browsing the\n" +
+                    "command options. Good bye!")
             else:
                 print("nothing")
-        print("len(xxx_args): {} | xxx_args {}".format(len(xxx_args), xxx_args))
+        print("len(xxx_args): {} | xxx_args {}".format(len(xxx_args),
+            xxx_args))
     else:
         xxx_args = sys.argv[1:]
     sanitized = False
@@ -269,7 +277,8 @@ if __name__ == "__main__":
             print("fail_safe: " , fail_safe)
             print("type(fail_safe): ", type(fail_safe))
             if valid == False:
-                raise Exception("Invalid command. What is it that you would like to do?")
+                raise Exception("Invalid command. What is it that you\n" +
+                    "would like to do?")
             else:
                 command = str(fail_safe)
                 print("command is: " + command)
