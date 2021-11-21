@@ -6,7 +6,6 @@ https://en.wikipedia.org/wiki/Hoi_polloi
 
 ## START
 
-
 ## FINISH
 
 ## Cheat Code

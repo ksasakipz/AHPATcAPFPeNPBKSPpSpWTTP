@@ -7,79 +7,17 @@ lock = " "
 x = 1
 
 command_box = {'q':'q',
-    0: "ls -lfa",
-    1: "python3 analyze_characters.py",
-    2: "bash toolbox/scripts/git_add_commit_push.sh ",
-    3: "dirs -v",
-    4: "du -sh ./*"}
+    "0": "ls -lfa",
+    "1": "python3 analyze_characters.py",
+    "2": "bash toolbox/scripts/git_add_commit_push.sh ",
+    "3": "dirs -v",
+    "4": "du -sh ./*",
+    "t": "python3 toolbox/code/habit_tracker/controller_habit_tracker.py"}
 
 block_box = {0: " ",
 1: "",
 4: "echo 4",
 "": "True"}
-full_names = {1: "Michael Mabe",
-    2: "Leonhard Euler",
-    3: "Albert Einstein"}
-nick_names = {1: "Kevin",
-    2: "Euler",
-    3: "Einstein"}
-identities = {1: "Mabe",
-    2: "e^(ipi)+1=0"}
-numbers = {0: "zero",
-    1: "one",
-    2: "two",
-    3: "three",
-    4: "four",
-    5: "five",
-    6: "six",
-    7: "seven",
-    8: "eight",
-    9: "nine",
-    10: "ten",
-    11: "eleven",
-    12: "twelve",
-    13: "thirteeen",
-    14: "fourteen",
-    15: "fifteen",
-    16: "sixteen",
-    17: "seventeen",
-    18: "eighteen",
-    19: "nineteen",
-    20: "twenty",
-    30: "thirty",
-    40: "forty",
-    50: "fifty",
-    60: "sixty",
-    70: "seventy",
-    80: "eighty",
-    90: "ninety",
-    100: "hundred",
-    1000: "thousand",
-    1000000: "million",
-    1000000000: "billion",
-    1000000000000: "trillion",
-    1000000000000000: "quadrillian",
-    1000000000000000000: "quintillion", 
-    1000000000000000000000: "hextillion",
-    10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000: "googol",
-    00: "google",
-    000: "triple"}
-phone_numbers = {"Mabe": 0,
-    "e^(ipi)+1=0": 1,
-    "pi": 2}
-order = {"main": 0,
-    "first": 2,
-    "second": 2,
-    "third": 3,
-    "fourth": 4,
-    "fifth": 5,
-    "sixth": 6,
-    "sevnth": 7,
-    "eighth": 8,
-    "ninth": 9,
-    "tenth": 10,
-    "eleventh": 11,
-    "twentieth": 20}
 
 """
 
@@ -88,15 +26,22 @@ Usage: In the CLI, use "python3 kevins_controller1.py x y z" where x, y, and z g
 """
 
 def peek_string(args):
+    """ I can't remember what this was going to be
+    """
     retval = "\"\"".format()
 
     return retval
 
 def proof_read_command(incantation):
+    """ I imagine this is meant to be a sort of autocorrect
+    """
     retval = "chicken butt"
     return retval, True
 
 def magic(incantation=" "):
+    """ I'm not quite sure what this is
+    """
+    return 1, 1
     retval = "False"
     valid = False
     global block_box
@@ -152,10 +97,14 @@ def main(command):
     validate()
 
 def view():
+    """ I'm not sure what this was
+    """
     print("Viewed!")
     return 2
 
 def validate():
+    """ I'm not sure what this was
+    """
     retval = False
     if True:
         retval = True
@@ -173,12 +122,20 @@ def subtract_from_treasure(treasure_map, gold):
     return treasure_map
 
 def compress():
+    """ I think this was going to be like a filter of some sort.
+        Or it was going to try to put something into a data structure
+    """
     return "compress"
 
 def decompress():
+    """ I think this was going to be like a filter of some sort.
+        Or it was going to try to put something into a data structure
+    """
     return "decompress"
 
 def sanitize():
+    """ I think this was going to filter for valid inputs
+    """
     retval = False
     if True:
         retval = True
@@ -190,13 +147,23 @@ def sanitize():
     return retval
 
 def build_ship(command):
+    """ This gathers the pieces and executes our commands
+    """
+    if command == command_box["t"]:
+        bypass = True
+    else:
+        bypass = False
     command = "clear; " + command
+    print(command)
 
     """ Pretty sure this will become one of the most important snippets
     """
     global lock
     lock, trash = magic()
-    key = input("Press {} to continue.".format(x))
+    if bypass:
+        key = "1"
+    else:
+        key = input("Press {} to continue.".format(x))
     print()
     print()
     print()
@@ -294,7 +261,7 @@ if __name__ == "__main__":
 
     while sanitized == False:
         try: 
-            command = command_box[int(xxx_args[index])]
+            command = command_box[xxx_args[index]]
             index += 1
             sanitized = True
         except:
