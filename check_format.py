@@ -56,13 +56,16 @@ def check_format(in_filename, peek_line, line_length_check, insert_comments,
 
 if __name__ == "__main__":
     in_filename = "out_kevins_controller1.py"
+    in_filename = "check_format.py"
+    in_filename = "kevins_controller1.py"
     peek_line = False
     line_length_check = True
-    insert_comments = False
+    insert_comments = True
     remove_comments = False
     if len(sys.argv) > 1:
         # "Comments on"
         if sys.argv[1] == ["co"]:
             insert_comments = True
 
-    check_format(in_filename, peek_line, line_length_check, insert_comments, remove_comments, "out_"+in_filename)
+    check_format(in_filename, peek_line, line_length_check,
+        insert_comments, remove_comments, "out_"+in_filename)
