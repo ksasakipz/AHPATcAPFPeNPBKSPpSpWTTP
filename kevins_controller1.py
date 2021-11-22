@@ -11,7 +11,7 @@ x = 1
 
 command_box = {'q':'q',
     "0": "ls -lfa",
-    "1": "python3 analyze_characters.py",
+    "1": "python3 check_format.py",
     "2": "bash toolbox/scripts/git_add_commit_push.sh ",
     "3": "dirs -v",
     "4": "du -sh ./*",
@@ -74,26 +74,26 @@ def magic(incantation=" "):
     return retval, valid
 
 def main(command):
-    print("B1 main A1")
-    print("B2 treasure_map A2")
+    # print("B1 main A1")
+    # print("B2 treasure_map A2")
     treasure_map = {'x':0} # 1
-    print("B3 build_ship A3")
+    # print("B3 build_ship A3")
     build_ship(command) #2
 
     # Begin loop here
-    print("B4 compress A4")
+    # print("B4 compress A4")
     compress() #3
-    print("B5 set_sail A5")
+    # print("B5 set_sail A5")
     set_sail() #4
-    print("B6 sanitize A6")
+    # print("B6 sanitize A6")
     sanitize() #5
-    print("B7 log_logline A7")
+    # print("B7 log_logline A7")
     log_logline(20) #6
-    print("B8 alphabetic A8")
+    # print("B8 alphabetic A8")
     alphabetic() #7
-    print("B9 decompress A9")
+    # print("B9 decompress A9")
     decompress() #8
-    print("A1 view B1")
+    # print("A1 view B1")
     view() #9
 
     # End loop here
@@ -284,7 +284,7 @@ if __name__ == "__main__":
                 print("command is: " + command)
                 sanitized = True
 
-    print("AHHHHHHHHHHHHHHHHH: ", command)
+    print("command: {}".format(command))
 
     while index < len(xxx_args):
         command += xxx_args[index]+" "
