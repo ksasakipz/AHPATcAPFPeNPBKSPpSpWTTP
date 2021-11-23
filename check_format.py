@@ -70,8 +70,10 @@ def main():
         if sys.argv[1] == ["co"]:
             insert_comments = True
 
-    check_format(in_filename, peek_line, line_length_check,
+    retval = check_format(in_filename, peek_line, line_length_check,
         insert_comments, remove_comments, "out_"+in_filename)
+    return retval
+    
     
 
 if __name__ == "__main__":
