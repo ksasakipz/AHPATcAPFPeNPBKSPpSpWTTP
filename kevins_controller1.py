@@ -6,6 +6,8 @@ import subprocess
 import time
 import pprint
 
+import check_format
+
 lock = " "
 x = 1
 
@@ -141,12 +143,10 @@ def decompress():
 def sanitize():
     """ I think this was going to filter for valid inputs
     """
-    retval = False
-    if True:
-        retval = True
+    retval = check_format.main()
+    if retval:
         print("Sanitization successful!")
     else:
-        retval = Fail
         print("Sanitization a failure!")
 
     return retval

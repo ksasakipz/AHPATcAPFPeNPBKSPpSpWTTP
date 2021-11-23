@@ -2,6 +2,7 @@ import sys
 
 def check_format(in_filename, peek_line, line_length_check, insert_comments,
     remove_comments, out_filename):
+    retval = True
     print("checking line lengths...")
     in_file = open(in_filename, "r")
     out_file = open(out_filename, "w")
@@ -18,6 +19,7 @@ def check_format(in_filename, peek_line, line_length_check, insert_comments,
                 print("count: {}".format(count))
                 print("line: {}".format(line[70:90]))
                 print("line: {}".format(line[70:79]))
+                retval = False
         if insert_comments:
             if count == 2:
                 if line[18] == "n":
@@ -53,8 +55,9 @@ def check_format(in_filename, peek_line, line_length_check, insert_comments,
     in_file.close()
     out_file.close()
     print("line length checking finished.")
+    return retval
 
-if __name__ == "__main__":
+def main():
     in_filename = "out_kevins_controller1.py"
     in_filename = "check_format.py"
     in_filename = "kevins_controller1.py"
@@ -69,3 +72,7 @@ if __name__ == "__main__":
 
     check_format(in_filename, peek_line, line_length_check,
         insert_comments, remove_comments, "out_"+in_filename)
+    
+
+if __name__ == "__main__":
+    main()
