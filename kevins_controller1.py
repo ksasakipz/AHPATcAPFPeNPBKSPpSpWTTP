@@ -79,6 +79,13 @@ def main(command):
     # print("B1 main A1")
     # print("B2 treasure_map A2")
     treasure_map = {'x':0} # 1
+
+    # print("B6 sanitize A6")
+    clean = sanitize() #5
+    if not clean:
+        raise Exception("Code not clean")
+
+
     # print("B3 build_ship A3")
     build_ship(command) #2
 
@@ -87,8 +94,6 @@ def main(command):
     compress() #3
     # print("B5 set_sail A5")
     set_sail() #4
-    # print("B6 sanitize A6")
-    sanitize() #5
     # print("B7 log_logline A7")
     log_logline(20) #6
     # print("B8 alphabetic A8")
