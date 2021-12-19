@@ -14,3 +14,6 @@ Survive at all costs.
 
 ## Cheat Code
 U-U-D-D-L-R-L-R-B-A-START
+
+## Statistics
+
