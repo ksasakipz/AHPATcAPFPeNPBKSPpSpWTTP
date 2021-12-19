@@ -8,8 +8,7 @@ def factorial(n):
         return 2
     else:
         return factorial(n-1) * n
-
-
+    main()
 
 def main():
     retval = ""
@@ -17,16 +16,18 @@ def main():
     while True:
         retval += str(random.randrange(factorial(index)))
 
-        if len(retval) > 80:
+        if len(retval) < 80:
             index += 1
             print(f'index: {index} | retval: {retval}')
             retval = ""
 
-        elif len(retval) < 80:
+        elif len(retval) == index:
             print()
             pass
         else:
-            index -= 1
+            index = 1
+
+    main()
             
 
 if __name__ == "__main__":
