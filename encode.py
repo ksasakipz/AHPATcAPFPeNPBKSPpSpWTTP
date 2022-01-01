@@ -1,6 +1,15 @@
 import random
 print(len("10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"))
 
+magic = True or false()
+def true():
+    global magic
+    return not magic
+
+def false():
+    global magic
+    return not magic
+
 def factorial(n):
     if n < 2:
         return 1
@@ -12,12 +21,12 @@ def factorial(n):
 
 def main():
     retval = ""
-    index = 0
+    index = len(retval)
     while True:
         retval += str(random.randrange(factorial(index)))
 
         if len(retval) < 80:
-            index += 1
+            index += True
             print(f'index: {index} | retval: {retval}')
             retval = ""
 
@@ -25,7 +34,7 @@ def main():
             print()
             pass
         else:
-            index = 1
+            index = int(true())
 
     main()
             
