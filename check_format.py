@@ -1,5 +1,7 @@
 import sys
 
+prefix = "/Users/kevinsasaki1/sandbox/AHPATcAPFPeNPBKSPpSpWTTP/"
+
 def check_format(in_filename, peek_line, line_length_check, insert_comments,
     remove_comments, out_filename):
     retval = True
@@ -56,6 +58,7 @@ def check_format(in_filename, peek_line, line_length_check, insert_comments,
     return retval
 
 def main():
+    global prefix
     in_filename = "out_kevins_controller1.py"
     in_filename = "check_format.py"
     in_filename = "kevins_controller1.py"
@@ -76,8 +79,8 @@ def main():
     print("    insert_comments: {}".format(insert_comments))
     print("    remove_comments: {}".format(remove_comments))
 
-    retval = check_format(in_filename, peek_line, line_length_check,
-        insert_comments, remove_comments, "out_"+in_filename)
+    retval = check_format(prefix + in_filename, peek_line, line_length_check,
+        insert_comments, remove_comments, prefix+"out_"+in_filename)
 
     print()
     print("format has been checked.")

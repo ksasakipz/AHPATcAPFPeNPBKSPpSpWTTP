@@ -19,8 +19,11 @@ command_box = {'q':'q',
     "4": "du -sh ./*",
     "t": "python3 toolbox/code/habit_tracker/controller_habit_tracker.py"
             + "&& open toolbox/code/habit_tracker/habit_tracker.xlsx",
+    "test": "python3"
+            + " ~/sandbox/AHPATcAPFPeNPBKSPpSpWTTP/toolbox/code/tree/test.py",
     "hr": "python3 toolbox/code/habit_tracker/controller_habit_tracker.py"
-            + "&& open toolbox/code/habit_tracker/habit_tracker.xlsx"
+            + "&& open toolbox/code/habit_tracker/habit_tracker.xlsx",
+    "xxx": "python3 ~/sandbox/vcoin/v-coin/q.py"
             }
 
 block_box = {0: " ",
@@ -87,6 +90,37 @@ def build_ship(command):
     print()
     print("command |{}| executed successfully".format(command))
     return 1
+
+def magic(incantation=" "):
+    """ I'm not quite sure what this is
+    """
+    return 1, 1
+    retval = "False"
+    valid = False
+    global block_box
+    print("block_box: ", block_box)
+    print("incantation: {} | type(incantation): {} | len(incantation: {}".
+        format( incantation, type(incantation), len(incantation)))
+    try:
+        print("block_box: ", block_box)
+        print("incantation: " , incantation)
+        print("type(incantation): ", type(incantation))
+        print("A1 retval: {} |  valid: {}".format(retval, valid))
+        retval = block_box[int(incantation)]
+        valid = True
+        print("block_box: ", block_box)
+        print("incantation: " , incantation)
+        print("type(incantation): ", type(incantation))
+        print("A2 retval: {} |  valid: {}".format(retval, valid))
+        return retval, valid
+    except:
+        retval = "True"
+        print("B retval: {} |  valid: {}".format(retval, valid))
+        return retval, valid
+    
+    retval, valid = proof_read_command(incantation)
+    print("C retval: {} |  valid: {}".format(retval, valid))
+    return retval, valid
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
