@@ -1,6 +1,6 @@
 import sys
 
-prefix = "/Users/kevinsasaki1/sandbox/AHPATcAPFPeNPBKSPpSpWTTP/"
+prefix = "/Users/kevinsasaki/sandbox/AHPATcAPFPeNPBKSPpSpWTTP/"
 
 def check_format(in_filename, peek_line, line_length_check, insert_comments,
     remove_comments, out_filename):
