@@ -59,7 +59,6 @@ def check_format(in_filename, peek_line, line_length_check, insert_comments,
 
 def main():
     global prefix
-    in_filename = "out_kevins_controller1.py"
     in_filename = "check_format.py"
     in_filename = "kevins_controller1.py"
     peek_line = False
