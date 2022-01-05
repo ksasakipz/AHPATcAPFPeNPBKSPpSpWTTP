@@ -95,7 +95,6 @@ def build_ship(command):
                 shell=True)
             git = f"git add . && git commit -m '{datetime.datetime.now()}'"
             git += "&&git push"
-            print("Kevin")
             sprocess = subprocess.call([git], shell=True)
             time.sleep(10)
         
