@@ -12,7 +12,7 @@ if __name__ == "__main__":
     target = prefix + "open.spotify.com:track:6tn96Btxy5ysJADC6cXGz8.webloc"
     command = "rm " + target
 
-    os.system([command])
+    os.system(command)
 
     
     
