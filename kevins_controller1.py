@@ -97,7 +97,7 @@ def build_ship(command):
             git += "&&git push"
             print("Kevin")
             sprocess = subprocess.call([git], shell=True)
-            time.sleep(60)
+            time.sleep(10)
         
 
     sprocess = subprocess.call([command], shell=True)
