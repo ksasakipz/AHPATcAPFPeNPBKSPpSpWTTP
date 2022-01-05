@@ -10,7 +10,7 @@ if __name__ == "__main__":
     print('os.listdir(~/): ' + str(x))
 
     target = prefix + "twenty-something_link_spotify"
-    command = "rm " + target
+    command = "touch " + target
 
     os.system(command)
 
