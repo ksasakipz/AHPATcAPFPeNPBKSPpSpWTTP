@@ -9,7 +9,7 @@ if __name__ == "__main__":
     x = os.listdir(prefix)
     print('os.listdir(~/): ' + str(x))
 
-    sprocess = subprocess.cal([f"rm {prefix}open.spotify.com:track:6tn96Btxy5ysJADC6cXGz8.webloc"])
+    sprocess = subprocess.call([f"rm {prefix}open.spotify.com:track:6tn96Btxy5ysJADC6cXGz8.webloc"])
 
     
     
