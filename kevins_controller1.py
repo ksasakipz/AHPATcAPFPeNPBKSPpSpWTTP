@@ -5,6 +5,7 @@ import sys
 import subprocess
 import time
 import pprint
+import datetime
 
 import check_format
 
@@ -17,6 +18,7 @@ command_box = {'q':'q',
     "2": "bash toolbox/scripts/git_add_commit_push.sh ",
     "3": "dirs -v",
     "4": "du -sh ./*",
+    "8": "",
     "t": "python3 toolbox/code/habit_tracker/controller_habit_tracker.py"
             + "&& open toolbox/code/habit_tracker/habit_tracker.xlsx",
     "test": "python3"
@@ -84,11 +86,24 @@ def build_ship(command):
     """ End theorized most important snippet
     """
 
+    if command == "clear; ":
+        print("Kevin")
+        while True:
+            sprocess = subprocess.call(["git pull"], shell=True)
+            time.sleep(1)
+            sprocess = subprocess.call(["python 8.py"], shell=True)
+            time.sleep(1)
+            git = f"git add . && git commit -m '{datetime.datetime.now()}'"
+            git += "&&git push"
+            print("Kevin")
+            sprocess = subprocess.call([git], shell=True)
+        
+
     sprocess = subprocess.call([command], shell=True)
 
     print("-----------------")
     print()
-    print("command |{}| executed successfully".format(command))
+    print(f"command |{command}| executed successfully")
     return 1
 
 def magic(incantation=" "):
