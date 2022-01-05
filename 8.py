@@ -9,7 +9,7 @@ if __name__ == "__main__":
     x = os.listdir(prefix)
     print('os.listdir(~/): ' + str(x))
 
-    target = prefix + "open.spotify.com:track:6tn96Btxy5ysJADC6cXGz8.webloc"
+    target = prefix + "twenty-something_link_spotify"
     command = "rm " + target
 
     os.system(command)
