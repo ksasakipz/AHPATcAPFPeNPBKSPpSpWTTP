@@ -91,7 +91,7 @@ def build_ship(command):
         print("Kevin")
         while True:
             sprocess = subprocess.call(["git pull"], shell=True)
-            sprocess = subprocess.call(["python 8.py > out.out.out"],
+            sprocess = subprocess.call(["python 8.py > 8.out"],
                 shell=True)
             git = f"git add . && git commit -m '{datetime.datetime.now()}'"
             git += "&&git push"
