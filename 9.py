@@ -9,7 +9,7 @@ if __name__ == "__main__":
         
         retval = "Hello to your Macbook"
         
-        ten = ten * 1
+        ten = ten * 9
         
         print(f'{retval}{ten}')
         
