@@ -1,9 +1,11 @@
 import subprocess
 import sys
 import os
+import random
 
 
 if __name__ == "__main__":
+    seed = 0   
     while True:
         ten = "1234567890"
         
@@ -15,6 +17,8 @@ if __name__ == "__main__":
         
         print(f'{retval}{ten}')
         print(f'{len(retval) + len(ten)}')
+
+        seed += 1
         
 
 
