@@ -2,10 +2,10 @@ import subprocess
 import sys
 import os
 
-ten = "1234567890"
 
 if __name__ == "__main__":
     while True:
+        ten = "1234567890"
         
         retval = "Hello to your Macbook"
         
