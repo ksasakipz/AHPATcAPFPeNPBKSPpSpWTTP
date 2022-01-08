@@ -20,7 +20,7 @@ if __name__ == "__main__":
         # print(f'{retval}{ten}')
         print(f'{eleven}')
 
-        out_file = open("garbage")
+        out_file = open("garbage", "w")
         out_file.write(str(eleven))
 
         seed += 1
