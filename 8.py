@@ -2,7 +2,7 @@ import subprocess
 import sys
 import os
 
-prefix = "/Users/kevinsasaki1/sandbox"
+prefix = "/Users/kevinsasaki/sandbox"
 
 if __name__ == "__main__":
     print("Hello to Kevin's Macbook pro")
