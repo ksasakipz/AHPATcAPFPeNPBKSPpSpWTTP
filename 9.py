@@ -14,6 +14,7 @@ if __name__ == "__main__":
         ten = ten + "12345"
         
         print(f'{retval}{ten}')
+        print(f'{len(retval}')
         
 
 
