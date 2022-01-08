@@ -11,7 +11,7 @@ if __name__ == "__main__":
         
         ten = ten * 7
 
-        ten = ten + "1234567890"
+        ten = ten + "12345"
         
         print(f'{retval}{ten}')
         
