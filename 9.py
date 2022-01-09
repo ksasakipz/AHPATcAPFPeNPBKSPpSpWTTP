@@ -21,7 +21,7 @@ if __name__ == "__main__":
         print(f'{eleven}')
 
         out_file = open("garbage", "wb")
-        out_file.write(bytes(eleven))
+        out_file.write(bytes(str(eleven)))
 
         seed += 1
         
